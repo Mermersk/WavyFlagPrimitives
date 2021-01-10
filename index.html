@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing No Data</title>
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+    
+    <canvas id = "c"></canvas>
+
+    <div id = "primitiveSelector" style = "margin-top: 20px;">
+        <input type = "radio" id = "triangles" name = "primitive" value = "gl.TRIANGLES">
+        <label for="triangles">gl.TRIANGLES</label>
+
+        <input checked type = "radio" id = "trianglesStrip" name = "primitive" value = "gl.TRIANGLE_STRIP">
+        <label for="trianglesStrip">gl.TRIANGLE_STRIP</label>
+
+        <input type = "radio" id = "trianglesFan" name = "primitive" value = "gl.TRIANGLE_FAN">
+        <label for="trianglesFan">gl.TRIANGLE_FAN</label>
+
+        <input type = "radio" id = "points" name = "primitive" value = "gl.POINTS">
+        <label for="points">gl.POINTS</label>
+
+        <input type = "radio" id = "lines" name = "primitive" value = "gl.LINES">
+        <label for="lines">gl.LINES</label>
+
+        <input type = "radio" id = "lineStrip" name = "primitive" value = "gl.LINE_STRIP">
+        <label for="lineStrip">gl.TRIANGLES</label>
+
+        <input type = "radio" id = "lineLoop" name = "primitive" value = "gl.LINE_LOOP">
+        <label for = "lineLoop">gl.LINE_LOOP</label>
+    </div>
+
+    <div id = "vertices" style = "margin-top: 20px;">
+        <input type="number" min = "0" max = "1000" id = "v">
+        <label for="v">Number of Vertices</label>
+    </div>
+    
+</body>
+</html>
